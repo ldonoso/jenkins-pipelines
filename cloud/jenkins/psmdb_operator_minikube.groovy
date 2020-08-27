@@ -222,14 +222,6 @@ pipeline {
                     }
 
                     installRpms()
-                    runTest('init-deploy')
-                    runTest('limits')
-                    runTest('scaling')
-                    runTest('self-healing')
-                    runTest('operator-self-healing')
-                    runTest('demand-backup')
-                    runTest('liveness')
-                    runTest('security-context')
                     runTest('users')
             }
             post {
